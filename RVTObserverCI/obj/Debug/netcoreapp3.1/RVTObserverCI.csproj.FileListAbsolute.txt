@@ -34,3 +34,6 @@ C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netc
 C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netcoreapp3.1\RVTObserverCI.pdb
 C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netcoreapp3.1\RVTObserverCI.genruntimeconfig.cache
 C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netcoreapp3.1\RVTObserverCI.csproj.CopyComplete
+C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netcoreapp3.1\RVTObserverCI.csprojAssemblyReference.cache
+C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Footer.cshtml.g.cs
+C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_NavMenu.cshtml.g.cs
