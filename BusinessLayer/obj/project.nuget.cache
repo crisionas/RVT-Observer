@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "X8cFF9Ja0Mwq51nxP5pYS4Rh5jxiFUFslQuAuJHyp6AIwHE6ipLQ0rmUqSiXzP0casZzYJ0Pllf776l/d4XcMA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Artyrik\\Desktop\\RVTProjectCI\\RVTObserverCI\\BusinessLayer\\BusinessLayer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Artyrik\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

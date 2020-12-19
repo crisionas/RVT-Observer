@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RVTObserverCI", "RVTObserverCI\RVTObserverCI.csproj", "{98942E41-568F-4BEF-A86B-2A47D6B98210}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{5F8158CC-D7D1-4BAD-A123-5E9C64DDD413}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RVTLibrary", "RVTLibrary\RVTLibrary.csproj", "{1208777A-2F1A-41F4-AE14-01527EEC3889}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{98942E41-568F-4BEF-A86B-2A47D6B98210}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98942E41-568F-4BEF-A86B-2A47D6B98210}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98942E41-568F-4BEF-A86B-2A47D6B98210}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F8158CC-D7D1-4BAD-A123-5E9C64DDD413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F8158CC-D7D1-4BAD-A123-5E9C64DDD413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F8158CC-D7D1-4BAD-A123-5E9C64DDD413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F8158CC-D7D1-4BAD-A123-5E9C64DDD413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1208777A-2F1A-41F4-AE14-01527EEC3889}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1208777A-2F1A-41F4-AE14-01527EEC3889}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1208777A-2F1A-41F4-AE14-01527EEC3889}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1208777A-2F1A-41F4-AE14-01527EEC3889}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
