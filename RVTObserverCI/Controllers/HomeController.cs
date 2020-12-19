@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BusinessLayer;
+using BusinessLayer.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using RVTLibrary.Models.Observer;
 using RVTObserverCI.Models;
 using System;
 using System.Collections.Generic;
@@ -11,19 +14,31 @@ namespace RVTObserverCI.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        IResults results;
+        protected ResultsResponse resultsResponse;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController()
         {
-            _logger = logger;
+            var bl = new BusinessManager();
+            results = bl.GetResults();
         }
+
 
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        public async Task<IActionResult> VoteResults()
+        {
+            var response = GetResults("0");
+            ViewBag.Population = response.Result.Population;
+            ViewBag.Votants = response.Result.Votants;
+            ViewBag.Percentage= (response.Result.Votants * 100) / response.Result.Population;
+            return View();
+        }
+
+        public IActionResult Statistics()
         {
             return View();
         }
@@ -32,6 +47,34 @@ namespace RVTObserverCI.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public async Task<ResultsResponse> GetResults(string id)
+        {
+            resultsResponse = await results.ResultsStatus(id);
+            return resultsResponse;
+        }
+
+        /// <summary>
+        /// Method Get Status for Vote Chart
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<ActionResult> Getstatus()
+        {
+            var response=await results.ResultsStatus("0");
+            return Json(response.TotalVotes);
+        }
+
+        /// <summary>
+        /// Method Get Gender for Gender Chart
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<ActionResult> Getgenderstatistic()
+        {
+            var response = await results.ResultsStatus("0");
+            return Json(response.GenderStatistics);
         }
     }
 }

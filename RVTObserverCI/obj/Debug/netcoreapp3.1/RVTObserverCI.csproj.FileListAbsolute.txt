@@ -21,7 +21,6 @@ C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netc
 C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netcoreapp3.1\RVTObserverCI.TagHelpers.output.cache
 C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netcoreapp3.1\RVTObserverCI.RazorCoreGenerate.cache
 C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -37,3 +36,10 @@ C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netc
 C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netcoreapp3.1\RVTObserverCI.csprojAssemblyReference.cache
 C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Footer.cshtml.g.cs
 C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_NavMenu.cshtml.g.cs
+C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netcoreapp3.1\Razor\Views\Home\VoteResults.cshtml.g.cs
+C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Statistics.cshtml.g.cs
+C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\bin\Debug\netcoreapp3.1\BusinessLayer.dll
+C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\bin\Debug\netcoreapp3.1\RVTLibrary.dll
+C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\bin\Debug\netcoreapp3.1\BusinessLayer.pdb
+C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\bin\Debug\netcoreapp3.1\RVTLibrary.pdb

@@ -3,7 +3,7 @@
     var myPieChart = new Chart(ctx, {
         type: 'doughnut',
         data: {
-            labels: ["Male", "Female"],
+            labels: ["Masculin", "Feminin"],
             datasets: [{
 
                 data: [labels, voice],

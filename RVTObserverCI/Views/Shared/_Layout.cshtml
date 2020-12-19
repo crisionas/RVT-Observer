@@ -7,32 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>@ViewData["Title"] - RVTObserverCI</title>
 
-    <link href="~/Maps/dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="~/Maps/dist/jquery.vmap.js"></script>
-    <script type="text/javascript" src="~/Maps/dist/maps/jquery.vmap.moldova.js" charset="utf-8"></script>
-    <script type="text/javascript" src="~/Maps/map.js"></script>
-
-    <script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>
-
-
     <link href="~/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/css/app.css" rel="stylesheet" />
-
-
     <link href="~/manifest.json" rel="manifest" />
-
     <link rel="stylesheet" href="~/css/nicepage.css" media="screen">
     <link rel="stylesheet" href="~/css/Page-1.css" media="screen">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
 
-    <link href="~/Maps/dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
-    <script class="u-script" type="text/javascript" src="~/js/nicepage.js" defer=""></script>
+    
 </head>
 <body class="u-body">
     <header>
-@Html.Partial("_NavMenu")
+        @Html.Partial("_NavMenu")
     </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -40,11 +25,12 @@
         </main>
     </div>
 
-@Html.Partial("_Footer")
-    </footer>
+    @Html.Partial("_Footer")
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script class="u-script" type="text/javascript" src="~/js/nicepage.js" defer=""></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>

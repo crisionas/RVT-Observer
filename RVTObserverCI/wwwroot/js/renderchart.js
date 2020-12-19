@@ -4,7 +4,7 @@
         {
             type: 'bar',
             data: {
-                labels: ["Green Party", "Red Party", "Blue Party", "Yellow Party", "Rose Party"],
+                labels: ["Partidul Verde", "Partidul Rosu", "Partidul Albastru", "Partidul Galben", "Partidul Roz"],
                 datasets: [
                     {
 
