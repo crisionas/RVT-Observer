@@ -11,7 +11,7 @@
         onRegionClick: function (event, code, region) {
             switch (code) {
                 case code:
-                    window.location.replace("/Map/RM/" + code);
+                    window.location.replace("/Results/RM/" + code);
             }
         }
     });

@@ -9,6 +9,5 @@ namespace RVTLibrary.Models.Observer
         public int IDParty { get; set; }
         public string Name { get; set; }
         public int Votes { get; set; }
-        public string Color { get; set; }
     }
 }
