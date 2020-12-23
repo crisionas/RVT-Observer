@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Interfaces
 {
-    public interface IResults
+    public interface IUser
     {
         public Task<ResultsResponse> ResultsStatus(string id);
+        public Task<StatisticsResponse> StatisticsStatus(string id);
     }
 }

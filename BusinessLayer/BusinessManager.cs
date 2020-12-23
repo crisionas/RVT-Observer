@@ -9,9 +9,9 @@ namespace BusinessLayer
 {
     public class BusinessManager
     {
-        public IResults GetResults()
+        public IUser GetResults()
         {
-            return new ResultsLevel() ;
+            return new UserLevel() ;
         }
     }
 }

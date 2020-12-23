@@ -43,3 +43,5 @@ C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\bin\Debug\netc
 C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\bin\Debug\netcoreapp3.1\RVTLibrary.pdb
 C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netcoreapp3.1\Razor\Views\Results\Index.cshtml.g.cs
 C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netcoreapp3.1\Razor\Views\Results\RM.cshtml.g.cs
+C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netcoreapp3.1\Razor\Views\Participation\Index.cshtml.g.cs
+C:\Users\Artyrik\Desktop\RVTProjectCI\RVTObserverCI\RVTObserverCI\obj\Debug\netcoreapp3.1\Razor\Views\Participation\RM.cshtml.g.cs

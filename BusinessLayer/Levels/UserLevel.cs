@@ -9,11 +9,16 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Levels
 {
-    public class ResultsLevel : ResultsImplementation, IResults
+    public class UserLevel : UserImplementation, IUser
     {
         public Task<ResultsResponse> ResultsStatus(string id)
         {
             return ResultsAction(id);
+        }
+
+        public Task<StatisticsResponse> StatisticsStatus(string id)
+        {
+            return StatisticsAction(id);
         }
     }
 }

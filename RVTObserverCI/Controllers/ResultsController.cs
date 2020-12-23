@@ -11,7 +11,7 @@ namespace RVTObserverCI.Controllers
 {
     public class ResultsController : Controller
     {
-        IResults results;
+        IUser results;
         private static ResultsResponse resultsResponse;
 
         public ResultsController()
@@ -53,8 +53,7 @@ namespace RVTObserverCI.Controllers
                 ViewBag.Name = resultsResponse.Name;
                 ViewBag.Population = resultsResponse.Population;
                 ViewBag.Votants = resultsResponse.Votants;
-                if (resultsResponse.Votants != 0)
-                    ViewBag.Percentage = (resultsResponse.Votants * 100) / resultsResponse.Population;
+                ViewBag.Percentage = (resultsResponse.Votants * 100) / resultsResponse.Population;
             }
             catch
             {
