@@ -44,7 +44,7 @@ namespace RVTObserverCI.Controllers
         {
             try
             {
-                statistics = await results.StatisticsStatus("0");
+                statistics = await results.StatisticsStatus(origin);
                 ViewBag.Name = statistics.Name;
                 ViewBag.Time = statistics.Time;
                 ViewBag.Voters = statistics.Voters;
