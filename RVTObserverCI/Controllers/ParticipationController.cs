@@ -59,13 +59,13 @@ namespace RVTObserverCI.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult> Getgenderstatistic()
+        public ActionResult Getgenderstatistic()
         {
             return Json(statistics.GenderStatistics);
         }
 
         [HttpGet]
-        public async Task<ActionResult> GetAges()
+        public ActionResult GetAges()
         {
             return Json(statistics.AgeVoters);
         }

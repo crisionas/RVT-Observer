@@ -67,7 +67,7 @@ namespace RVTObserverCI.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public async Task<ActionResult> Getstatus()
+        public ActionResult Getstatus()
         {
             return Json(resultsResponse.TotalVotes);
         }
@@ -77,7 +77,7 @@ namespace RVTObserverCI.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public async Task<ActionResult> Getgenderstatistic()
+        public ActionResult Getgenderstatistic()
         {
             return Json(resultsResponse.GenderStatistics);
         }

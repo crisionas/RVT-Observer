@@ -11,14 +11,14 @@ namespace BusinessLayer.Levels
 {
     public class UserLevel : UserImplementation, IUser
     {
-        public Task<ResultsResponse> ResultsStatus(string id)
+        public async Task<ResultsResponse> ResultsStatus(string id)
         {
-            return ResultsAction(id);
+            return await ResultsAction(id);
         }
 
-        public Task<StatisticsResponse> StatisticsStatus(string id)
+        public async Task<StatisticsResponse> StatisticsStatus(string id)
         {
-            return StatisticsAction(id);
+            return await StatisticsAction(id);
         }
     }
 }

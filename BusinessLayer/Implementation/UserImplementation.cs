@@ -13,74 +13,82 @@ namespace BusinessLayer.Implementation
     {
         internal async Task<ResultsResponse> ResultsAction(string id)
         {
-            var data = JsonConvert.SerializeObject(id);
-            var content = new StringContent(data, Encoding.UTF8, "application/json");
-            var handler = new HttpClientHandler();
-            handler.ServerCertificateCustomValidationCallback =
-                HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
-            handler.AllowAutoRedirect = true;
-            using (var client = new HttpClient(handler))
+            return await Task.Run(() =>
             {
-                client.BaseAddress = new Uri("https://localhost:44380/");
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                var request_api = new HttpRequestMessage()
+                var data = JsonConvert.SerializeObject(id);
+                var content = new StringContent(data, Encoding.UTF8, "application/json");
+                var handler = new HttpClientHandler();
+                handler.ServerCertificateCustomValidationCallback =
+                    HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
+                handler.AllowAutoRedirect = true;
+                using (var client = new HttpClient(handler))
                 {
-                    RequestUri = new Uri("https://localhost:44380/api/Results/Results"),
-                    Method = HttpMethod.Post,
-                };
+                    client.BaseAddress = new Uri("https://localhost:44380/");
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                var response = client.PostAsync("api/Results/Results", content);
-                var regresponse = new ResultsResponse();
+                    var request_api = new HttpRequestMessage()
+                    {
+                        RequestUri = new Uri("https://localhost:44380/api/Results/Results"),
+                        Method = HttpMethod.Post,
+                    };
 
-                try
-                {
-                    var data_resp = await response.Result.Content.ReadAsStringAsync();
+                    var response = client.PostAsync("api/Results/Results", content);
+                    var regresponse = new ResultsResponse();
 
-                    regresponse = JsonConvert.DeserializeObject<ResultsResponse>(data_resp);
+                    try
+                    {
+                        var data_resp = response.Result.Content.ReadAsStringAsync().Result;
 
+                        regresponse = JsonConvert.DeserializeObject<ResultsResponse>(data_resp);
+
+                    }
+                    catch
+                    {
+                    }
+
+                    return regresponse;
                 }
-                catch
-                {
-                }
-
-                return regresponse;
-            }
+            });
         }
         internal async Task<StatisticsResponse> StatisticsAction(string id)
         {
-            var data = JsonConvert.SerializeObject(id);
-            var content = new StringContent(data, Encoding.UTF8, "application/json");
-            var handler = new HttpClientHandler();
-            handler.ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
-            handler.AllowAutoRedirect = true;
-            using (var client = new HttpClient(handler))
+            return await Task.Run(() =>
             {
-                client.BaseAddress = new Uri("https://localhost:44380/");
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
-                var request_api = new HttpRequestMessage()
+                var data = JsonConvert.SerializeObject(id);
+                var content = new StringContent(data, Encoding.UTF8, "application/json");
+                var handler = new HttpClientHandler();
+                handler.ServerCertificateCustomValidationCallback =
+                    HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
+                handler.AllowAutoRedirect = true;
+                using (var client = new HttpClient(handler))
                 {
-                    RequestUri = new Uri("https://localhost:44380/api/Results/Statistics"),
-                    Method = HttpMethod.Post,
-                };
+                    client.BaseAddress = new Uri("https://localhost:44380/");
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                var response = client.PostAsync("api/Results/Statistics", content);
-                var responseStats = new StatisticsResponse();
+                    var request_api = new HttpRequestMessage()
+                    {
+                        RequestUri = new Uri("https://localhost:44380/api/Results/Statistics"),
+                        Method = HttpMethod.Post,
+                    };
 
-                try
-                {
-                    var data_resp = await response.Result.Content.ReadAsStringAsync();
+                    var response =  client.PostAsync("api/Results/Statistics", content);
+                    var responseStats = new StatisticsResponse();
 
-                    responseStats = JsonConvert.DeserializeObject<StatisticsResponse>(data_resp);
+                    try
+                    {
+                        var data_resp = response.Result.Content.ReadAsStringAsync().Result;
 
+                        responseStats = JsonConvert.DeserializeObject<StatisticsResponse>(data_resp);
+
+                    }
+                    catch (AggregateException e)
+                    {
+                    }
+
+                    return responseStats;
                 }
-                catch (AggregateException e)
-                {
-                }
-
-                return responseStats;
-            }
+            });
         }
     }
 }
