@@ -2,15 +2,6 @@
     ViewData["Title"] = ViewBag.Name;
 }
 
-@section Scripts{
-
-    <link href="~/Maps/dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
-
-    <script type="text/javascript" src="~/Maps/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="~/Maps/dist/jquery.vmap.js"></script>
-    <script type="text/javascript" src="~/Maps/dist/maps/jquery.vmap.moldova.js" charset="utf-8"></script>
-    <script type="text/javascript" src="~/Maps/map.js"></script>
-}
 
 <section class="u-clearfix u-section-1" id="sec-4afa">
     <div class="u-clearfix u-sheet u-sheet-1">
@@ -18,9 +9,6 @@
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">@ViewBag.Name</h1>
         </div>
-        <center>
-            <center><div id="vmap" style="width: 700px; height: 500px;"></div></center>
-        </center>
         <!-- Content Row -->
         <div class="row text-center">
 
